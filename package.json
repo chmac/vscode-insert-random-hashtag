@@ -19,12 +19,12 @@
     "commands": [
       {
         "command": "extension.insertHashtag",
-        "title": "Insert a random #hashtag"
+        "title": "#hashtag Insert a random hash value"
       }
     ]
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
+    "vscode:prepublish": "yarn run compile",
     "compile": "tsc -p ./",
     "lint": "tslint -p ./",
     "watch": "tsc -watch -p ./"
