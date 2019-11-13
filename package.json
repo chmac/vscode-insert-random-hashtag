@@ -2,7 +2,7 @@
   "name": "insert-random-hashtag",
   "displayName": "Insert Random Hashtag #r4nd0m",
   "description": "Insert random #hashtags in VS Code",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "chmac",
   "repository": "https://github.com/chmac/vscode-insert-random-hashtag",
   "engines": {
