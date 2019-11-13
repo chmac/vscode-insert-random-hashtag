@@ -2,6 +2,18 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
 
+const CHARSET =
+  "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+// A function to generate a random hash value
+const generateRandomHash = (length: number = 6) => {
+  return Array.from({ length }).reduce(soFar => {
+    const choice = Math.round(Math.random() * CHARSET.length);
+    const newChar = CHARSET[choice];
+    return `${soFar}${newChar}`;
+  }, "#");
+};
+
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
@@ -20,7 +32,9 @@ export function activate(context: vscode.ExtensionContext) {
       // The code you place here will be executed every time your command is executed
 
       // Display a message box to the user
-      vscode.window.showInformationMessage("Hello World!");
+      vscode.window.showInformationMessage(
+        `Hello World! ${generateRandomHash()}`
+      );
     }
   );
 
