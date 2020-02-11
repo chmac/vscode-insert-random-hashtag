@@ -25,6 +25,9 @@
   },
   "scripts": {
     "vscode:prepublish": "yarn run compile",
+    "publish-patch": "vsce publish patch",
+    "publish-minor": "vsce publish minor",
+    "publish-major": "vsce publish major",
     "compile": "tsc -p ./",
     "lint": "tslint -p ./",
     "watch": "tsc -watch -p ./"
