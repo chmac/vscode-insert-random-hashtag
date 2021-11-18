@@ -5,6 +5,7 @@
   "version": "0.1.3",
   "publisher": "chmac",
   "repository": "https://github.com/chmac/vscode-insert-random-hashtag",
+  "license": "AGPL-3.0-or-later",
   "engines": {
     "vscode": "^1.34.0"
   },
