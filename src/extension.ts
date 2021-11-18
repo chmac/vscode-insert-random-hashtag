@@ -8,7 +8,7 @@ const CHARSET =
 // A function to generate a random hash value
 const generateRandomHash = (length: number = 6) => {
   return Array.from({ length }).reduce((soFar: string): string => {
-    const choice = Math.floor(Math.random() * CHARSET.length - 1);
+    const choice = Math.floor(Math.random() * (CHARSET.length - 1));
     const newChar = CHARSET[choice];
     return `${soFar}${newChar}`;
   }, "#");
