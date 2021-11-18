@@ -23,7 +23,7 @@ export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerTextEditorCommand(
     "extension.insertHashtag",
     (textEditor, edit) => {
-      textEditor.edit(editBuilder => {
+      textEditor.edit((editBuilder) => {
         editBuilder.insert(textEditor.selection.active, generateRandomHash());
       });
     }
